@@ -16,13 +16,37 @@ namespace rhs
             routes.MapRoute(
                 name: "AboutMe",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Aboutme", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "AboutMe", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
                 name: "Contact",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "DolbyCinema",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "DolbyCinema", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Calculator",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Calculator", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Bdc",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Bdc", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "PhraseRewriter",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "PhraseRewriter", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(

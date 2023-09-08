@@ -23,5 +23,25 @@ namespace rhs.Controllers
         {
             return View();
         }
+
+        public ActionResult DolbyCinema()
+        {
+            return View();
+        }
+
+        public ActionResult Calculator()
+        {
+            return View();
+        }
+
+        public ActionResult Bdc()
+        {
+            return View();
+        }
+        public ActionResult PhraseRewriter()
+        {
+            return View();
+        }
+
     }
 }
