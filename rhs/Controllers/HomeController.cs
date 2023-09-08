@@ -13,5 +13,15 @@ namespace rhs.Controllers
         {
             return View();
         }
+
+        public ActionResult AboutMe()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }

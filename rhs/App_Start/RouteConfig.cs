@@ -14,6 +14,18 @@ namespace rhs
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "AboutMe",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Aboutme", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Contact",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
