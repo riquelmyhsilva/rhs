@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/*fonts*/
+
+@font-face {
+    font-family: 'IBMPlexMono-Light';
+    src: url('font/IBMPlexMono-Light.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono-Medium';
+    src: url('font/IBMPlexMono-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono-Regular';
+    src: url('font/IBMPlexMono-Regular.ttf');
+}
+
+/*style base*/
+
+::-webkit-scrollbar {
+	width: 1px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #252525;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: rgb(37,37,37);
+background: linear-gradient(180deg, rgba(37,37,37,1) 0%, rgba(255,92,0,1) 50%, rgba(37,37,37,1) 100%);
+	border-radius: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: inherit;
+	padding: inherit;
+	box-sizing: inherit;
+    font-family: 'IBM Plex Mono', Arial, monospace, sans-serif;
+    font-size: 16px;
+    background-color: #252525;
+    color: #FF5C00;
+}
+
+.divisor {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button {
+    transition: .4s;
+}
+
+.button:hover {
+    transition: .4s;
+    color: #FF9D66;
+    cursor: pointer;
+}
+
+/*header*/
+
+header {
+    padding: 50px;
+}
+
+main {
+    display: flex;
+}
+
+a {
+    color: #FF5C00;
+    text-decoration: none;
+    font-family: 'IBMPlexMono-Regular',Arial, sans-serif;
+}
+
+.menu-buttons-header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+/*main-content*/
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+p, h1 {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+p {
+    font-size: clamp(20px, 5vw, 60px);
+    margin: 0px 0px 50px 0px;
+    font-family: 'IBMPlexMono-Light',Arial, sans-serif;
+}
+
+h1 {
+    font-size: clamp(50px, 10vw, 120px);
+    font-family: 'IBMPlexMono-Medium',Arial, sans-serif;
+}
+
+h3 {
+    font-size: clamp(16px, 1vw, 32px);
+    font-family: 'IBMPlexMono-Regular',Arial, sans-serif;
+    margin: 15px  0px 15px 0px;
+}
+
+/*footer*/
+
+footer {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-buttons-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button-footer {
+    margin-inline: clamp(1px, 3%, 25px);
+}
+
+.main-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#license {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}

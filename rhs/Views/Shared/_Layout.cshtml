@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="~/Content/src/css/base-website-style.css">
+    <link rel="shortcut icon" href="~/Content/src/favicon/favicon-r.ico" type="image/x-icon">
+
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <header class="menu">
+        <main>
+            <a href="index.html" class="logo button">rhs</a>
+            <div class="menu-buttons-header">
+                <a href="index.html#projects" class="nav-button button">work</a>
+                <a href="about-me.html" class="nav-button button">about me</a>
+                <a href="contact.html" class="nav-button button">contact</a>
+            </div>
+        </main>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <main class="main-footer">
+            <p id="license">© rhs 2023</p>
+            <div class="menu-buttons-footer">
+                <a href="#" class="nav-button-footer button">home</a>
+                <a href="index.html#projects" class="nav-button-footer button">work</a>
+                <a href="about-me.html" class="nav-button-footer button">about me</a>
+                <a href="contact.html" class="nav-button-footer button">contact</a>
+            </div>
+        </main>
+    </footer>
+    <script src="~/Content/src/js/base-script.js"></script>
+</body>
+</html>

@@ -88,11 +88,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\src\css\about-me-style.css" />
+    <Content Include="Content\src\css\base-website-style.css" />
+    <Content Include="Content\src\css\bdc.css" />
+    <Content Include="Content\src\css\calculator-style.css" />
+    <Content Include="Content\src\css\contact-style.css" />
+    <Content Include="Content\src\css\dolby-cinema-style.css" />
+    <Content Include="Content\src\css\index-style.css" />
+    <Content Include="Content\src\css\phrase-rewriter-style.css" />
+    <Content Include="Content\src\favicon\favicon-r.ico" />
+    <Content Include="Content\src\img\BDC logomark 3000px png.png" />
+    <Content Include="Content\src\img\calculator-icon.png" />
+    <Content Include="Content\src\img\calculator.png" />
+    <Content Include="Content\src\img\dolby-cinema-logo.png" />
+    <Content Include="Content\src\img\dolby-cinema.png" />
+    <Content Include="Content\src\img\monitor-frente-template.png" />
+    <Content Include="Content\src\img\phrase-rewriter-logo.png" />
+    <Content Include="Content\src\img\phrase-rewriter.png" />
+    <Content Include="Content\src\img\presentation-1.png" />
+    <Content Include="Content\src\img\presentation-2.png" />
+    <Content Include="Content\src\img\presentation-3.png" />
+    <Content Include="Content\src\img\presentation-4.png" />
+    <Content Include="Content\src\img\presentation-bdc.png" />
+    <Content Include="Content\src\img\presentation-dolby-cinema.png" />
+    <Content Include="Content\src\img\protese1-img.png" />
+    <Content Include="Content\src\img\varios-monitores-template.png" />
+    <Content Include="Content\src\js\about-me-script.js" />
+    <Content Include="Content\src\js\base-script.js" />
+    <Content Include="Content\src\js\contact-script.js" />
+    <Content Include="Content\src\js\index-script.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -100,7 +130,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\src\css\font\IBMPlexMono-Light.ttf" />
+    <Content Include="Content\src\css\font\IBMPlexMono-Medium.ttf" />
+    <Content Include="Content\src\css\font\IBMPlexMono-Regular.ttf" />
     <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,7 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

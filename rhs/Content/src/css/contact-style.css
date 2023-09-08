@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.tittle-main {
+    font-size: 24px;
+    margin: 25px 0px 50px ;
+}
+
+.biography-text {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.block-text {
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+h3 {
+    margin: 0px;
+    margin-bottom: 50px;
+}    
+
+.tittle-email {
+    font-size: 24px;
+    margin: 25px 0px 50px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    font-size: 24px;
+    text-decoration: underline;
+    margin: 50px 0px 50px ;
+}
+
+.client-email {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.email-box {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+
+.email-text {
+    border: none;
+    background-color: #ffffff07;
+    color: #FF5C00;
+    flex: 1 1 100%;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    border-radius: 3px;
+    outline: solid 1px transparent;
+    transition: outline 1s;
+    font-family: 'IBMPlexMono-Light',Arial, sans-serif;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 50px;
+}
+
+.email-text:focus {
+    outline: solid 1px #ff5e0054;
+    transition: outline 1s;
+}
+
+.email-text:not(:focus) {
+    outline-color: transparent;
+    transition: outline-color .5s;
+}
+
+.email-text::placeholder {
+    color: #ff5e007a;
+    font-size: 18px;
+    transform: translateY(-2px);
+}
+
+.email-text:focus::placeholder {
+    transition: color .3s;
+    color: transparent;
+}
+
+.email-text:not(:focus)::placeholder {
+    color: #ff5e007a;
+    transition: color .5s;
+}
+
+.button-send-email {
+	text-align: center;
+	border: none;
+	border-radius: 3px;
+	background: transparent;
+	color: #FF5C00;
+	cursor: pointer;
+    width: 30px;
+    font-size: 18px;
+    font-family: 'IBMPlexMono-Light',Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 50px;
+}
+
+.button-send-email:active {
+	color: #FF5C00;
+}

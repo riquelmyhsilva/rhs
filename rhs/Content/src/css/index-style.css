@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+#Silva {
+    margin: 0px 0px 50px 0px;
+}
+
+#end-main-text {
+    margin: 0px 0px 15px 0px;
+}
+
+/*main-images*/
+
+.main-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: 'IBMPlexMono-Regular',Arial, sans-serif;
+    margin: 15px  0px 15px 0px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.overlay img {
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#logo-dolby, #logo-bdc {
+    filter:invert(1);
+}
+
+#logo-calc {
+    height: 50%;
+}
+
+/*footer*/
+
+footer {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-buttons-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 25px
+}
+
+#license {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .container {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.content-main {
+    font-size: clamp(10px, 5vw, 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content img {
+    width: clamp(300px, 96vw, 2000px);
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info-project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-info {
+    margin-inline: 10%;
+}
+
+.text-info h5 {
+    margin: 0;
+    font-size: clamp(20px, 3vw, 60px);
+}
+
+.text-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-container h2 {
+    font-size: clamp(20px, 6vw, 50px);
+}
+
+.text-container p {
+    font-size: clamp(10px, 3vw, 25px);
+    margin-bottom: 0px;
+}
+
+.text-container a {
+    text-decoration: underline;
+    font-size: clamp(10px, 3vw, 30px);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.next-project-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-project-container p {
+    width: 100%;
+    font-size: clamp(10px, 2vw, 20px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 25px 0px;
+}
+
+.next-project-container h1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 25px 0px;
+    cursor: pointer;
+}
+
+.button h1 {
+    font-size: clamp(20px, 8vw, 200px);
+}

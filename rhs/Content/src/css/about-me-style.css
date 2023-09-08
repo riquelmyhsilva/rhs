@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.tittle-main {
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin: 25px 0px 50px ;
+}
+
+.biography-text {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.block-text {
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+h3 {
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    margin-top: 50px;
+}
+
+.block {
+    width: 100%;
+    min-width: 400px;
+    margin-right: 50px;
+    flex: 1 1;
+}
+
+.block-text {
+    margin: 0px;
+    margin-top: 50px;
+}
+
+ul {
+    font-family: 'IBMPlexMono-Regular',Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 8px;
+}
