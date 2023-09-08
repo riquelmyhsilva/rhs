@@ -14,46 +14,53 @@ namespace rhs
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Default",
+                url: "Home/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "AboutMe",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "AboutMe", id = UrlParameter.Optional }
+                url: "Home/AboutMe",
+                defaults: new { controller = "Home", action = "AboutMe" }
             );
 
             routes.MapRoute(
                 name: "Contact",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+                url: "Home/Contact",
+                defaults: new { controller = "Home", action = "Contact" }
             );
 
             routes.MapRoute(
                 name: "DolbyCinema",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "DolbyCinema", id = UrlParameter.Optional }
+                url: "Home/DolbyCinema",
+                defaults: new { controller = "Home", action = "DolbyCinema" }
             );
 
             routes.MapRoute(
                 name: "Calculator",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Calculator", id = UrlParameter.Optional }
+                url: "Home/Calculator",
+                defaults: new { controller = "Home", action = "Calculator" }
             );
 
             routes.MapRoute(
                 name: "Bdc",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Bdc", id = UrlParameter.Optional }
+                url: "Home/Bdc",
+                defaults: new { controller = "Home", action = "Bdc" }
             );
 
             routes.MapRoute(
                 name: "PhraseRewriter",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "PhraseRewriter", id = UrlParameter.Optional }
+                url: "Home/PhraseRewriter",
+                defaults: new { controller = "Home", action = "PhraseRewriter" }
             );
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "RegistrarEmail",
+                url: "HomeController/RegistrarEmail",
+                defaults: new { controller = "HomeController", action = "RegistrarEmail" }
             );
+
         }
     }
 }

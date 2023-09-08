@@ -9,7 +9,7 @@
 <div class="divisor"></div>
 <main class="main-content">
     <p class="tittle-main">contact</p>
-    <h1 class="content-main">
+    <h1 class="content-main">   
         I feel flattered and excited to start a new job. Let's go work togheter.
     </h1>
     <a href="#" class="email">riquelmyhs13@gmail.com</a>
@@ -19,8 +19,11 @@
     <div class="client-email">
         <p class="tittle-email">or let me get in touch with you</p>
         <div class="email-box">
-            <input type="text" name="" class="email-text" placeholder="your e-mail">
-            <button class="button button-send-email">send</button>
+            <form action="@Url.Action("RegistrarEmail", "HomeController")" method="post">
+                @Html.AntiForgeryToken()
+                <input type="email" name="EmailAddress" class="email-text" placeholder="your e-mail" required>
+                <button type="submit" class="button button-send-email">send</button>
+            </form>
         </div>
     </div>
 </main>
