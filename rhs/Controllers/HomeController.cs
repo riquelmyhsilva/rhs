@@ -1,11 +1,17 @@
 ﻿using rhs.Models;
 using System;
+using System.Data.Entity;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace rhs.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController()
+        {
+
+        }
         // GET: Home
         public ActionResult Index()
         {
@@ -41,6 +47,7 @@ namespace rhs.Controllers
             return View();
         }
 
+        /*
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult RegistrarEmail(string EmailAddress)
@@ -73,6 +80,38 @@ namespace rhs.Controllers
             // Se o modelo não for válido, volte para a página de contato
             return View("Contact");
         }
+
+        private readonly EmailContext _context;
+
+        public HomeController(EmailContext context)
+        {
+            _context = context;
+        }
+
+        [HttpPost]
+        public ActionResult Registrar(string EmailAdress)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var novoEmail = new Email { EmailAddress = EmailAdress, SentDate = DateTime.Now };
+                    _context.Email.Add(novoEmail);
+                    _context.SaveChanges();
+
+                    // Redirecione para uma página de sucesso ou faça outra ação
+                    return RedirectToAction("Sucesso");
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, "Ocorreu um erro ao registrar o email. Por favor, tente novamente mais tarde." + ex);
+                }
+            }
+
+            // Se o modelo não for válido ou ocorrer um erro, volte para o formulário
+            return View();
+        }
+        */
 
     }
 }

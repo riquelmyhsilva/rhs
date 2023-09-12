@@ -20,6 +20,12 @@ namespace rhs
             );
 
             routes.MapRoute(
+                name: "Index",
+                url: "Home/Index",
+                defaults: new { controller = "Home", action = "Index" }
+            );
+
+            routes.MapRoute(
                 name: "AboutMe",
                 url: "Home/AboutMe",
                 defaults: new { controller = "Home", action = "AboutMe" }

@@ -117,3 +117,21 @@ h3 {
 .button-send-email:active {
 	color: #FF5C00;
 }
+
+.email-textbox-cs {
+    border: none;
+    background-color: #ffffff07;
+    color: #FF5C00;
+    flex: 1 1 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-size: 20px;
+    border-radius: 3px;
+    outline: solid 1px transparent;
+    transition: outline 1s;
+    font-family: 'IBMPlexMono-Light',Arial, sans-serif;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 50px;
+}
